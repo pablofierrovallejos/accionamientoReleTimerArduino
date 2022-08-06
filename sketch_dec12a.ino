@@ -9,31 +9,24 @@ const int ledPIN = 9;
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 String estado;
 void setup() {
-
   Serial.begin(9600);
-
   lcd.begin(16, 2); // Indicar a la libreria que tenemos conectada una pantalla de 16x2
   lcd.init();       // Inicializar el LCD
   lcd.backlight();  //Encender la luz de fondo.
   lcd.clear();      // Mover el cursor a la primera posición de la pantalla (0, 0)
   lcd.print("INICIO TIMER");
 
-
   setTime(0, 0, 0, 12, 12, 2021);     // Establecemos la fecha
   pinMode(ledPIN , OUTPUT);
   digitalWrite(ledPIN, 1);
   Serial.println("LED ON");
-
-
   estado = "ON";
-  // Esperar un segundo
-  delay(1000);
-
+  
+  delay(1000);  // Esperar un segundo
 }
 
 void loop() {
   fecha = now();
-
   String tiempoActual = dosdigit(hour(fecha)) + ":" + dosdigit(minute(fecha)) + ":" + dosdigit(second(fecha));  // Imprimimos Tiempo actual
   lcd.clear();
   lcd.setCursor(0, 0);
@@ -44,7 +37,6 @@ void loop() {
   Serial.println(tiempoActual);
 
   delay(1000);
-
   reseteaTiempo(tiempoActual);
 }
 void reseteaTiempo(String tiempoActual) {
