@@ -13,3 +13,10 @@ Permite setear tiempo de encendido en minutos y tiempo de apagado
 <p align="center">
 <img  src="https://github.com/pablofierrovallejos/accionamientoReleTimerArduino/blob/timercontecladointegrado/timer1.jpeg"  width= "500"  height="350"/>
 </p>
+
+<p align="center">
+<img  src="https://github.com/pablofierrovallejos/accionamientoReleTimerArduino/blob/timercontecladointegrado/timer2.jpeg"  width= "500"  height="350"/>
+</p>
+<p align="center">
+<img  src="https://github.com/pablofierrovallejos/accionamientoReleTimerArduino/blob/timercontecladointegrado/timer3.jpeg"  width= "500"  height="350"/>
+</p>
