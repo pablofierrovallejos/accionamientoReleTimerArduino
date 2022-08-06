@@ -1,5 +1,5 @@
 # accionamientoReleTimerArduino
-# Se utiliza placa Arduino UNO.
+# Temporizador con memoria programable por pulsadores.
 Script arduino para controla relé de potencia temporizado y pantalla LCD de 2 filas
 
 Archivos fuente: sketch_dec12a.ino
