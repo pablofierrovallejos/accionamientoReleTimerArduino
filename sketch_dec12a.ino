@@ -30,7 +30,6 @@ byte cicloSalida = 1;                  // Define el estado actual de la salida
 byte imenu = -1;                        // Opción de menú actual
 
 void setup() {
-  
   //inicializaMemoria();
   
   Serial.begin(9600);
@@ -54,8 +53,8 @@ void setup() {
 
   tiempoON =   formateaHoraCadena(0,int(memon),  int(memonS));
   tiempoOFF =  formateaHoraCadena(0,int(memoff), int(memoffS));
-  
 }
+
 void inicializaMemoria(){
      EEPROM.write(0, 0);
      EEPROM.write(1, 1);
@@ -64,7 +63,6 @@ void inicializaMemoria(){
 }
 
 void loop() {
-
   Serial.println("Loop -> ");
   Serial.print("Time On  "); Serial.println(tiempoON);
   Serial.print("Time Off "); Serial.println(tiempoOFF);
@@ -78,9 +76,7 @@ void loop() {
       lcd.print(tiempoActual + " " + estado);
 
       Serial.println(tiempoActual);
-
       reseteaTiempo(tiempoActual);
-
       leerTeclado();
   }else{
       lcd.setCursor(0, 1);
@@ -156,8 +152,6 @@ void intercambiaEstadoLed() {
   }
 }
 
-
-
 void leerTeclado() {
   int x = analogRead (0);
   if (x < 60) {               // lcd.print ("Right ");  ALMACENA NUEVO VALOR
@@ -229,7 +223,6 @@ void leerTeclado() {
                   break;
         }
         modoseteo= 1;
-
   }
 }
 
