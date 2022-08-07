@@ -1,6 +1,6 @@
 # accionamientoReleTimerArduino
 # Temporizador con memoria programable por pulsadores.
-Script arduino para controla relé de potencia temporizado y pantalla LCD de 2 filas
+Script arduino para controlar relé de potencia temporizado y pantalla LCD de 2 filas
 
 Archivos fuente: sketch_dec12a.ino
 Versión final con pantalla lcd y pulsadores analógicos integrados que permite cambiar el tiempo de encendido y apagado en minutos y segundos.
